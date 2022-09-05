@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.top {
+    height: 400px;
+    background-image: url(img/topback_catalog.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header {
+    height: 77px;
+    display: flex;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    &_input {
+        width: 288px;
+        height: 41px;
+        border: 1px solid #ffffff;
+        box-sizing: border-box;
+        border-radius: 20px;
+        background-color: transparent;
+        outline: none;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #ffffff;
+        padding-left: 32px;
+        padding-right: 32px;
+        box-sizing: border-box;
+        transition: 0.5s;
+    }
+    &_input::placeholder {
+        color: #ffffff;
+    }
+    &_input:hover {
+        background-color: grey;
+        opacity: 0.8;
+    }
+}
+
+.menu {
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    gap: 32px;
+    &_mob {
+        display: none;
+    }
+    &_link:hover {
+        text-decoration: underline;
+    }
+    &_link {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #ffffff;
+    }
+}
+.heading {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    font-style: normal;
+    color: #ffffff;
+    margin-top: 127px;
+    margin-bottom: 126px;
+    width: 792px;
+}
+.breadcrumb_nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+}
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+ul.breadcrumb li + li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: #000000;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+.select_form {
+    width: 288px;
+    height: 41px;
+    left: 1032px;
+    top: 464px;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    padding-left: 16px;
+}
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.catalog {
+    margin-top: 41px;
+    &-content {
+        display: grid;
+        gap: 32px;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    &-product {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        margin-top: 10px;
+        margin-bottom: 9px;
+        display: flex;
+    }
+}
+
+.product {
+    grid-column: span 4;
+    transition: all 0.3s;
+}
+.product:hover {
+    transform: scale(1.05);
+}
+
+.descriptionproduct {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #888888;
+    margin-top: 7px;
+    margin-bottom: 13px;
+}
+
+.cost {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #050505;
+}
+
+.footer {
+    background-color: #f7f6f6;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    &_content {
+        width: 792px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &_logo {
+        height: 130px;
+        width: 265px;
+        margin-top: 20px;
+    }
+    &_info {
+        display: flex;
+        gap: 100px;
+    }
+    &-menu {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #888888;
+        text-decoration: none;
+    }
+    &-menu:hover {
+        text-decoration: underline;
+    }
+    &_item_contact {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #888888;
+        text-decoration: none;
+    }
+    &_item_contact:hover {
+        text-decoration: underline;
+    }
+    &-icons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &-form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    &_item {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+.nav_footer_item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.mail {
+    margin-bottom: 4px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.field {
+    width: 275px;
+    height: 46px;
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #c4c4c4;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: all 150ms ease-in-out;
+}
+.field:hover {
+    color: #000000;
+    box-shadow: 0 0 10px 0 #686868 inset, 0 0 10px 4px #686868;
+}
+
+.button {
+    background: rgba(222, 215, 215, 0.41);
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 275px;
+    height: 46px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    font-family: Roboto;
+    margin-top: 12px;
+    transition: all 150ms ease-in-out;
+}
+.button:hover {
+    box-shadow: 0 0 10px 0 #686868 inset, 0 0 10px 4px #686868;
+}
+
+.catalog-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #000000;
+}
+.link_catalog {
+    margin-bottom: 64px;
+    margin-top: 32px;
+}
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+@import "tablet-catalog";
+@import "mobile-catalog";
